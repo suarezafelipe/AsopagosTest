@@ -18,6 +18,7 @@ namespace AsopagosTest
                         .UseContentRoot(Directory.GetCurrentDirectory())                        
                         .UseIISIntegration()
                         .UseStartup<Startup>()
+                        .UseUrls("http://localhost:5500/")
                         .Build();
 
 

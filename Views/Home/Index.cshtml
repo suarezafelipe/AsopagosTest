@@ -14,7 +14,7 @@
                 <h3 class="panel-title">Formulario de Captura de Datos</h3>
             </div>
             <div class="panel-body">
-                @using (Html.BeginForm(null, null, FormMethod.Post, new { name = "form", id = "form", @action = "http://localhost:5500/api/ModuloPagos/EnviarDatosPago", @method = "post", @target = "_blank" }))
+                @using (Html.BeginForm(null, null, FormMethod.Post, new { name = "form", id = "form", @action = "http://pruebapayu.azurewebsites.net/api/ModuloPagos/EnviarDatosPago", @method = "post", @target = "_blank" }))
                 {
                     <form>   
                         <div class="row">
