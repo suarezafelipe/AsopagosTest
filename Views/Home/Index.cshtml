@@ -19,12 +19,12 @@
                     <form>   
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Código de Referencia</label>
-                                    @Html.TextBoxFor(m => m.referenceCode, new { @class = "form-control", @placeholder = "ADE34FDH32" })     
+                                <div class="form-group">    
+                                    <label>Test?</label>
+                                    @Html.CheckBoxFor(m => m.test, new { @class = "form-control" })
                                 </div>
                                 <div class="form-group">
-                                    <label>Descripción</label>
+                                    <label>Descripción de la venta</label>
                                     @Html.TextBoxFor(m => m.description, new { @class = "form-control", @placeholder = "Descripción de la venta" })
                                 </div>
                                 <div class="form-group">
@@ -69,6 +69,8 @@
                                     <label>Teléfono</label>
                                     @Html.TextBoxFor(m => m.telephone, new { @class = "form-control", @placeholder = "32045615648" })
                                 </div>
+                                @Html.Hidden("asopagosAppId", "1")
+                                @Html.Hidden("asopagosSignature", "bf1925e39f9f42c6260dcf7ebe2e674729c388e95b1cf03ae973fd1be62d98d2")
                             </div>
                         </div>
 

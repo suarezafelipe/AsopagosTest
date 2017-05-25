@@ -18,5 +18,10 @@ namespace AsopagosTest.Models
         public string shippingCity { get; set; }
         public string shippingCountry { get; set; }
         public string telephone { get; set; }
+        public bool test { get; set; }
+        public string extra1 { get; set; }
+        public string extra2 { get; set; }
+        public string asopagosAppId { get; set; }
+        public string asopagosSignature { get; set; }
     }
 }
